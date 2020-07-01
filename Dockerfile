@@ -1,6 +1,4 @@
 FROM jenkins/jenkins:lts
-ENV HTTPS_PROXY "http://genproxy.corp.amdocs.com:8080"
-ENV HTTP_PROXY "http://genproxy.corp.amdocs.com:8080"
 USER root
 
 RUN mkdir -p /tmp/download && \
