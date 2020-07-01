@@ -1,4 +1,6 @@
 FROM jenkins/jenkins:lts
+ENV https_proxy=http://proxy.corp.example.com:8080
+ENV http_proxy=http://proxy.corp.example.com:8080 
 USER root
 
 RUN mkdir -p /tmp/download && \
