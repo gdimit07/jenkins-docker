@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.204.6
+FROM jenkins/jenkins:lts
 USER root
 
 RUN mkdir -p /tmp/download && \
